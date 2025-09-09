@@ -24,7 +24,7 @@ export const config = {
       category: "blog",
     },
     {
-      name: "Huahua's Tech Road",
+      name: "Huahua&#8217;s Tech Road",
       url: "https://zxi.mytechroad.com/blog/feed/",
       category: "blog",
     },
