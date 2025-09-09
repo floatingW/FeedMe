@@ -14,13 +14,23 @@
 export const config = {
   sources: [
     {
-      name: "Armin Ronacher's blog",
+      name: "Armin Ronacher's Thoughts and Writings",
       url: "https://lucumr.pocoo.org/feed.atom",
       category: "blog",
     },
     {
-      name: "韦易笑's blog",
+      name: "Skywind Inside",
       url: "https://skywind.me/blog/feed",
+      category: "blog",
+    },
+    {
+      name: "Huahua's Tech Road",
+      url: "https://zxi.mytechroad.com/blog/feed/",
+      category: "blog",
+    },
+    {
+      name: "Sutter’s Mill",
+      url: "https://herbsutter.com/feed/",
       category: "blog",
     }
   ],
