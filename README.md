@@ -88,7 +88,7 @@
   - 构建静态网站
   - 根据仓库变量设置决定部署目标:
     - 总是部署到 GitHub Pages
-    - 如果 `ENABLE_VERCEL_DEPLOYMENT` 为 `true` 则部署到Vercel
+    - 如果 `ENABLE_VERCEL_DEPLOYMENT` 为 `true` 则部署到 Vercel
 
 #### 自定义部署配置
 

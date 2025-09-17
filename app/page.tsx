@@ -44,6 +44,11 @@ export default function Home() {
         </Suspense>
       </div>
 
+      <footer className="border-t border-border">
+        <div className="container mx-auto max-w-4xl py-6">
+          <p className="text-center text-sm text-muted-foreground">Stay hungry. 😋</p>
+        </div>
+      </footer>
       <ScrollToTop />
     </main>
   )
