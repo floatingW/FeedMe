@@ -24,6 +24,11 @@ export const config = {
       category: "科技资讯",
     },
     {
+      name: "OpenAI News",
+      url: "https://openai.com/news/rss.xml",
+      category: "科技资讯",
+    },
+    {
       name: "Github 今日热门",
       url: "https://rsshub.rssforever.com/github/trending/daily/any",
       category: "代码项目",
