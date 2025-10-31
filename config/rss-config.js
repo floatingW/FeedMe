@@ -58,6 +58,11 @@ export const config = {
       url: "https://simonwillison.net/atom/everything/",
       category: "技术博客",
     },
+    {
+      name: "Microsoft Research",
+      url: "https://www.microsoft.com/en-us/research/feed/",
+      category: "技术博客",
+    },
     // {
     //   name: "Product Hunt 今日热门",
     //   url: "https://rsshub.rssforever.com/producthunt/today",
