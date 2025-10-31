@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm:*)",
+      "Bash(pnpm build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\n清理冗余组件，优化项目结构\n\n删除了项目中的冗余文件，包括：\n- 删除重复的 hook 文件（use-toast.ts 和 use-mobile.tsx），统一使用 hooks 目录\n- 删除 34 个未使用的 shadcn/ui 组件（68% 冗余率）\n- 保留 16 个实际使用的 UI 组件\n\n清理后：\n- 减少约 2000-3000 行冗余代码\n- 简化项目结构，提高可维护性\n- 减小构建体积\n\n已验证构建成功，无功能影响。\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
