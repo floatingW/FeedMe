@@ -1,0 +1,309 @@
+{
+  "sourceUrl": "https://herbsutter.com/feed/",
+  "title": "Sutter’s Mill",
+  "description": "Herb Sutter on software development",
+  "link": "https://herbsutter.com",
+  "items": [
+    {
+      "title": "Gor Nishanov (1971-2026)",
+      "link": "https://herbsutter.com/2026/06/28/gor-nishanov-1971-2026/",
+      "pubDate": "Mon, 29 Jun 2026 06:44:34 +0000",
+      "isoDate": "2026-06-29T06:44:34.000Z",
+      "content": "I am deeply saddened to report that this weekend, far too soon, we lost Gor Nishanov: a friend and colleague, an extraordinary software engineer, and a long-serving member of the C++ standards committee. Gor was always intelligent and witty, but above all he was kind and generously helpful to others. I especially appreciated the times &#8230; <a href=\"https://herbsutter.com/2026/06/28/gor-nishanov-1971-2026/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Gor Nishanov (1971-2026)</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "I am deeply saddened to report that this weekend, far too soon, we lost Gor Nishanov: a friend and colleague, an extraordinary software engineer, and a long-serving member of the C++ standards committee. Gor was always intelligent and witty, but above all he was kind and generously helpful to others. I especially appreciated the times … Continue reading Gor Nishanov (1971-2026) →",
+      "creator": "Herb Sutter",
+      "summary": "Gor Nishanov（1971-2026）于本周末不幸离世。他是一位杰出的软件工程师，也是C++标准委员会的长期成员。他聪慧机智，为人善良，总是慷慨地帮助他人。他的离去令朋友和同事深感悲痛。"
+    },
+    {
+      "title": "New York panel video is now online",
+      "link": "https://herbsutter.com/2026/06/28/new-york-panel-video-is-now-online/",
+      "pubDate": "Sun, 28 Jun 2026 21:36:34 +0000",
+      "isoDate": "2026-06-28T21:36:34.000Z",
+      "content": "Four weeks ago I was in downtown Manhattan for the world premiere event for&#160;C++: The Documentary. It was great to see two theaters full of enthusiastic C++ developers, and getting to mingle with them all before and after the film. Afterwards we had a live panel: Bjarne Stroustrup, Gabriel Dos Reis, Nina Ranns, Eric Lubin, &#8230; <a href=\"https://herbsutter.com/2026/06/28/new-york-panel-video-is-now-online/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">New York panel video is now&#160;online</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "Four weeks ago I was in downtown Manhattan for the world premiere event for C++: The Documentary. It was great to see two theaters full of enthusiastic C++ developers, and getting to mingle with them all before and after the film. Afterwards we had a live panel: Bjarne Stroustrup, Gabriel Dos Reis, Nina Ranns, Eric Lubin, … Continue reading New York panel video is now online →",
+      "creator": "Herb Sutter",
+      "summary": "纽约小组讨论视频现已上线。四周前，C++纪录片在曼哈顿举行全球首映，两场放映座无虚席，开发者热情参与。影片结束后举办了现场小组讨论，参与者包括Bjarne Stroustrup等人。目前该小组讨论视频已可在网上观看。"
+    },
+    {
+      "title": "Trip report: June 2026 ISO C++ standards meeting (Brno, Czechia)",
+      "link": "https://herbsutter.com/2026/06/13/brno-trip-report/",
+      "pubDate": "Sat, 13 Jun 2026 08:01:49 +0000",
+      "isoDate": "2026-06-13T08:01:49.000Z",
+      "content": "Adopted this week in draft C++29: Complete catalog of all undefined behavior in C++. Contract pre/post support for virtual functions. Defaulting (=default) for postfix increment/decrement. Designated initializers for base classes. Python-style .lookup(key) for associative containers. And more…",
+      "contentSnippet": "Adopted this week in draft C++29: Complete catalog of all undefined behavior in C++. Contract pre/post support for virtual functions. Defaulting (=default) for postfix increment/decrement. Designated initializers for base classes. Python-style .lookup(key) for associative containers. And more…",
+      "creator": "Herb Sutter",
+      "summary": "2026年6月在捷克布尔诺召开的ISO C++标准会议通过多项草案，包括：完整列出C++中所有未定义行为、支持虚函数的契约前/后条件、默认化后置递增/递减运算符、为基类指定初始化器，以及为关联容器提供类似Python的.lookup(key)操作等。"
+    },
+    {
+      "title": "C++: The Documentary released today",
+      "link": "https://herbsutter.com/2026/06/04/c-the-documentary-released-today/",
+      "pubDate": "Fri, 05 Jun 2026 03:16:24 +0000",
+      "isoDate": "2026-06-05T03:16:24.000Z",
+      "content": "C++: The Documentary premiered today on YouTube, and it was great to be on the live chat with Bjarne and many other key folks who participated in C++&#8217;s history. I&#8217;m honored to have been one of hundreds of people who have played a part in advancing Bjarne&#8217;s wonderful project over the years. If you haven&#8217;t &#8230; <a href=\"https://herbsutter.com/2026/06/04/c-the-documentary-released-today/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">C++: The Documentary released&#160;today</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "C++: The Documentary premiered today on YouTube, and it was great to be on the live chat with Bjarne and many other key folks who participated in C++’s history. I’m honored to have been one of hundreds of people who have played a part in advancing Bjarne’s wonderful project over the years. If you haven’t … Continue reading C++: The Documentary released today →",
+      "creator": "Herb Sutter",
+      "summary": "C++纪录片今日在YouTube首映。作者与Bjarne及多位参与C++历史的关键人物一同参与了直播聊天，并感到十分荣幸。作者表示，自己是多年来为推动这一伟大项目贡献力量的数百人之一。"
+    },
+    {
+      "title": "Poll: Have you observed AI agents doing harm?",
+      "link": "https://herbsutter.com/2026/04/30/poll-ai-agents/",
+      "pubDate": "Thu, 30 Apr 2026 22:17:56 +0000",
+      "isoDate": "2026-04-30T22:17:56.000Z",
+      "content": "Back in October, I wrote &#8220;Schneier on LLM vulnerabilities, agentic AI, and &#8216;trusting&#160;trust'&#8221; about fundamental architectural weaknesses in current LLMs and agents, and why I personally don&#8217;t yet trust AI agents with my credentials. At the end, I wrote: I love AI and LLMs. I use them every day. I look forward to letting an &#8230; <a href=\"https://herbsutter.com/2026/04/30/poll-ai-agents/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Poll: Have you observed AI agents doing&#160;harm?</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "Back in October, I wrote “Schneier on LLM vulnerabilities, agentic AI, and ‘trusting trust'” about fundamental architectural weaknesses in current LLMs and agents, and why I personally don’t yet trust AI agents with my credentials. At the end, I wrote: I love AI and LLMs. I use them every day. I look forward to letting an … Continue reading Poll: Have you observed AI agents doing harm? →",
+      "creator": "Herb Sutter",
+      "summary": "文章标题：投票：你是否观察到AI代理造成伤害？\n\n摘要：作者回顾了十月份关于大语言模型漏洞及代理AI架构缺陷的文章，指出其个人因安全性问题尚不信任AI代理。文章末尾发起一项投票，询问读者是否曾观察到AI代理造成实际伤害，意在收集实证案例以探讨代理AI的风险。"
+    },
+    {
+      "title": "My 7-min “lightning talk” is online: Why C++ is growing, and why C++26 will likely be adopted quickly",
+      "link": "https://herbsutter.com/2026/04/29/london-meetup/",
+      "pubDate": "Wed, 29 Apr 2026 20:09:40 +0000",
+      "isoDate": "2026-04-29T20:09:40.000Z",
+      "content": "At the London C++ meetup last month, I participated on a panel where each panelist gave a short introductory presentation. My 7-minute intro (aka &#8220;lightning talk&#8221;) just got posted &#8212; you can view it here. The one-sentence blurb: &#8220;C++ is accelerating, and C++26 is built for what developers need now.&#8221; Also check out the longer &#8230; <a href=\"https://herbsutter.com/2026/04/29/london-meetup/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">My 7-min &#8220;lightning talk&#8221; is online: Why C++ is growing, and why C++26 will likely be adopted&#160;quickly</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "At the London C++ meetup last month, I participated on a panel where each panelist gave a short introductory presentation. My 7-minute intro (aka “lightning talk”) just got posted — you can view it here. The one-sentence blurb: “C++ is accelerating, and C++26 is built for what developers need now.” Also check out the longer … Continue reading My 7-min “lightning talk” is online: Why C++ is growing, and why C++26 will likely be adopted quickly →",
+      "creator": "Herb Sutter",
+      "summary": "作者在伦敦C++聚会上发表了7分钟演讲，现已上线。核心观点是：C++正在加速发展，而C++26专为当前开发者需求设计，因此很可能被迅速采用。"
+    },
+    {
+      "title": "My BeCPP talk video posted: “C++ — Growing in a world of competition, safety, and AI”",
+      "link": "https://herbsutter.com/2026/04/19/becpp/",
+      "pubDate": "Mon, 20 Apr 2026 05:04:00 +0000",
+      "isoDate": "2026-04-20T05:04:00.000Z",
+      "content": "BeCPP just posted this video of my talk at their March 30 Symposium. This is the first time I&#8217;ve given this material on camera &#8212; it&#8217;s extension of themes in my New Year&#8217;s Eve blog post, with major updates because some big industry changes happened in the first quarter of 2026. This talk is different &#8230; <a href=\"https://herbsutter.com/2026/04/19/becpp/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">My BeCPP talk video posted: &#8220;C++ &#8212; Growing in a world of competition, safety, and&#160;AI&#8221;</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "BeCPP just posted this video of my talk at their March 30 Symposium. This is the first time I’ve given this material on camera — it’s extension of themes in my New Year’s Eve blog post, with major updates because some big industry changes happened in the first quarter of 2026. This talk is different … Continue reading My BeCPP talk video posted: “C++ — Growing in a world of competition, safety, and AI” →",
+      "creator": "Herb Sutter",
+      "summary": "BeCPP发布了作者于3月30日研讨会上的演讲视频，主题为“C++——在竞争、安全和AI的世界中成长”。这是该内容首次以视频形式呈现，延续了作者新年博客中的观点，并根据2026年第一季度行业重大变化进行了大幅更新。"
+    },
+    {
+      "title": "C++26 is done! — Trip report: March 2026 ISO C++ standards meeting (London Croydon, UK)",
+      "link": "https://herbsutter.com/2026/03/29/c26-is-done-trip-report-march-2026-iso-c-standards-meeting-london-croydon-uk/",
+      "pubDate": "Sun, 29 Mar 2026 16:24:16 +0000",
+      "isoDate": "2026-03-29T16:24:16.000Z",
+      "content": "News flash: C++26 is done! 🎉 On Saturday, the ISO C++ committee completed technical work on C++26 in (partly) sunny London Croydon, UK. We resolved the remaining international comments on the C++26 draft, and are now producing the final document to be sent out for its international approval ballot (Draft International Standard, or DIS) and &#8230; <a href=\"https://herbsutter.com/2026/03/29/c26-is-done-trip-report-march-2026-iso-c-standards-meeting-london-croydon-uk/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">C++26 is done! — Trip report: March 2026 ISO C++ standards meeting (London Croydon,&#160;UK)</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "News flash: C++26 is done! 🎉 On Saturday, the ISO C++ committee completed technical work on C++26 in (partly) sunny London Croydon, UK. We resolved the remaining international comments on the C++26 draft, and are now producing the final document to be sent out for its international approval ballot (Draft International Standard, or DIS) and … Continue reading C++26 is done! — Trip report: March 2026 ISO C++ standards meeting (London Croydon, UK) →",
+      "creator": "Herb Sutter",
+      "summary": "C++26 标准已完成技术工作。在2026年3月于英国伦敦克罗伊登举行的ISO C++委员会会议上，委员会解决了C++26草案剩余的国际评论意见，目前正在生成最终文件，即将提交国际批准投票（DIS）。这标志着C++26标准的技术内容正式定稿。"
+    },
+    {
+      "title": "Software taketh away faster than hardware giveth: Why C++ programmers keep growing fast despite competition, safety, and AI",
+      "link": "https://herbsutter.com/2025/12/30/software-taketh-away-faster-than-hardware-giveth-why-c-programmers-keep-growing-fast-despite-competition-safety-and-ai/",
+      "pubDate": "Wed, 31 Dec 2025 00:49:51 +0000",
+      "isoDate": "2025-12-31T00:49:51.000Z",
+      "content": "2025 was another great year for C++. It shows in the numbers Before we dive into the data below, let’s put the most important question up front: Why have C++ and Rust been the fastest-growing major programming languages from 2022 to 2025? Primarily, it’s because throughout the history of computing “software taketh away faster than &#8230; <a href=\"https://herbsutter.com/2025/12/30/software-taketh-away-faster-than-hardware-giveth-why-c-programmers-keep-growing-fast-despite-competition-safety-and-ai/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Software taketh away faster than hardware giveth: Why C++ programmers keep growing fast despite competition, safety, and&#160;AI</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "2025 was another great year for C++. It shows in the numbers Before we dive into the data below, let’s put the most important question up front: Why have C++ and Rust been the fastest-growing major programming languages from 2022 to 2025? Primarily, it’s because throughout the history of computing “software taketh away faster than … Continue reading Software taketh away faster than hardware giveth: Why C++ programmers keep growing fast despite competition, safety, and AI →",
+      "creator": "Herb Sutter",
+      "summary": "2025年C++表现依旧强劲。数据显示，2022至2025年间，C++与Rust是增长最快的主流编程语言。主要原因在于：软件消耗性能的速度，始终快于硬件提升性能的速度。这一根本矛盾推动了C++的持续发展，即便面临竞争、安全性与AI等挑战。"
+    },
+    {
+      "title": "Speaking in Singapore (Thursday 20 November) and Sydney (Sunday 23 November)",
+      "link": "https://herbsutter.com/2025/11/16/speaking-in-singapore-thursday-20-november-and-sydney-sunday-23-november/",
+      "pubDate": "Sun, 16 Nov 2025 17:43:44 +0000",
+      "isoDate": "2025-11-16T17:43:44.000Z",
+      "content": "In the next week, I will be giving talks on C++ reflection in Singapore (Thursday night) and Sydney (Sunday night). If you&#8217;re local, please RSVP! I look forward to seeing many of you there. Singapore C++ Users Group November Meetup Thursday November 20, 6:30pm to 9:30pmClifford Pier, Fullerton Bay Hotel80 Collyer Quay, Singapore 049326 Citadel &#8230; <a href=\"https://herbsutter.com/2025/11/16/speaking-in-singapore-thursday-20-november-and-sydney-sunday-23-november/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Speaking in Singapore (Thursday 20 November) and Sydney (Sunday 23&#160;November)</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "In the next week, I will be giving talks on C++ reflection in Singapore (Thursday night) and Sydney (Sunday night). If you’re local, please RSVP! I look forward to seeing many of you there. Singapore C++ Users Group November Meetup Thursday November 20, 6:30pm to 9:30pmClifford Pier, Fullerton Bay Hotel80 Collyer Quay, Singapore 049326 Citadel … Continue reading Speaking in Singapore (Thursday 20 November) and Sydney (Sunday 23 November) →",
+      "creator": "Herb Sutter",
+      "summary": "作者将在未来一周内分别于新加坡（11月20日周四晚）和悉尼（11月23日周日晚）举办关于C++反射的演讲。文中邀请当地听众报名参加，并提供了新加坡C++用户组11月聚会的具体时间与地点。"
+    },
+    {
+      "title": "Trip report: November 2025 ISO C++ standards meeting (Kona, USA)",
+      "link": "https://herbsutter.com/2025/11/10/trip-report-november-2025-iso-c-standards-meeting-kona-usa/",
+      "pubDate": "Mon, 10 Nov 2025 21:59:07 +0000",
+      "isoDate": "2025-11-10T21:59:07.000Z",
+      "content": "On Saturday, the ISO C++ committee completed the first of two final fit-and-finish meetings for C++26, in our meeting in Kona, USA. What we have in the C++26 working draft represents exactly the set of features we have consensus on so far; the goal of these last two meetings is to fix bugs and otherwise &#8230; <a href=\"https://herbsutter.com/2025/11/10/trip-report-november-2025-iso-c-standards-meeting-kona-usa/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Trip report: November 2025 ISO C++ standards meeting (Kona,&#160;USA)</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "On Saturday, the ISO C++ committee completed the first of two final fit-and-finish meetings for C++26, in our meeting in Kona, USA. What we have in the C++26 working draft represents exactly the set of features we have consensus on so far; the goal of these last two meetings is to fix bugs and otherwise … Continue reading Trip report: November 2025 ISO C++ standards meeting (Kona, USA) →",
+      "creator": "Herb Sutter",
+      "summary": "ISO C++委员会在美国科纳召开了C++26标准制定过程中两次最终完善会议中的第一次会议。当前C++26工作草案包含了已达成共识的全部功能，本次会议的目标是修复缺陷并进一步完善标准。"
+    },
+    {
+      "title": "Schneier on LLM vulnerabilities, agentic AI, and “trusting trust”",
+      "link": "https://herbsutter.com/2025/10/23/schneier-on-llm-vulnerabilities-agentic-ai-and-trusting-trust/",
+      "pubDate": "Thu, 23 Oct 2025 18:36:04 +0000",
+      "isoDate": "2025-10-23T18:36:04.000Z",
+      "content": "Last month, I was having dinner with a group and someone at the table was excitedly sharing how they were using agentic AI to create and merge PRs for them, with some review but with a lot of trust and automation. I admitted that I could be comfortable with some limited uses for that, such &#8230; <a href=\"https://herbsutter.com/2025/10/23/schneier-on-llm-vulnerabilities-agentic-ai-and-trusting-trust/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Schneier on LLM vulnerabilities, agentic AI, and &#8220;trusting&#160;trust&#8221;</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "Last month, I was having dinner with a group and someone at the table was excitedly sharing how they were using agentic AI to create and merge PRs for them, with some review but with a lot of trust and automation. I admitted that I could be comfortable with some limited uses for that, such … Continue reading Schneier on LLM vulnerabilities, agentic AI, and “trusting trust” →",
+      "creator": "Herb Sutter",
+      "summary": "Schneier 在文章中探讨了 LLM 漏洞、代理 AI 及“信任信任”问题。他提到，有人兴奋地分享用代理 AI 自动创建和合并 PR，虽有一些审查，但依赖大量信任与自动化。Schneier 表示对某些有限用途可以接受，但隐含对过度信任的担忧。"
+    },
+    {
+      "title": "Poll: Does your project use terminating assertions in production?",
+      "link": "https://herbsutter.com/2025/10/13/poll-does-your-project-use-terminating-assertions-in-production/",
+      "pubDate": "Mon, 13 Oct 2025 20:46:25 +0000",
+      "isoDate": "2025-10-13T20:46:25.000Z",
+      "content": "I’m running this poll to gather data, both for myself and for other interested C++ committee members. I&#8217;m curious to see what you all report! Please let us know what your current project is doing, and thank you for participating. The poll will close on Friday night.",
+      "contentSnippet": "I’m running this poll to gather data, both for myself and for other interested C++ committee members. I’m curious to see what you all report! Please let us know what your current project is doing, and thank you for participating. The poll will close on Friday night.",
+      "creator": "Herb Sutter",
+      "summary": "一项针对C++项目的投票正在开展，询问各项目是否在生产环境中使用终止断言（terminating assertions）。该投票旨在为发起者及其他感兴趣的C++委员会成员收集数据，欢迎参与者告知当前项目的做法。投票将于周五晚上截止。"
+    },
+    {
+      "title": "Speaking on October 21 at PDXCPP: Portland OR C++ meetup",
+      "link": "https://herbsutter.com/2025/10/08/speaking-on-october-21-at-pdxcpp-portland-or-meetup/",
+      "pubDate": "Wed, 08 Oct 2025 16:07:56 +0000",
+      "isoDate": "2025-10-08T16:07:56.000Z",
+      "content": "In two weeks I&#8217;ll be giving a talk at the local C++ meetup here in peaceful, quirky, dog-walking, frisbee-throwing, family-friendly Portland, Oregon, USA. PDXCPP &#8211; Monthly MeetupOctober 21, 2025 @ 7:00pmLocation: Siemens EDA in Wilsonville Which talk will I give? That&#8217;s a great question, and there&#8217;s a poll about that! At CppCon last month, I &#8230; <a href=\"https://herbsutter.com/2025/10/08/speaking-on-october-21-at-pdxcpp-portland-or-meetup/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Speaking on October 21 at PDXCPP: Portland OR C++&#160;meetup</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "In two weeks I’ll be giving a talk at the local C++ meetup here in peaceful, quirky, dog-walking, frisbee-throwing, family-friendly Portland, Oregon, USA. PDXCPP – Monthly MeetupOctober 21, 2025 @ 7:00pmLocation: Siemens EDA in Wilsonville Which talk will I give? That’s a great question, and there’s a poll about that! At CppCon last month, I … Continue reading Speaking on October 21 at PDXCPP: Portland OR C++ meetup →",
+      "creator": "Herb Sutter",
+      "summary": "作者将于2025年10月21日晚7点在俄勒冈州波特兰市的PDXCPP月度C++聚会上发表演讲，地点为威尔逊维尔的西门子EDA。演讲主题尚未确定，主办方正在进行投票选择。作者上个月参加了CppCon，相关细节可继续阅读原文。"
+    },
+    {
+      "title": "My other CppCon talk video is now available: The Joy of C++26 Contracts (and Some Myth-Conceptions)",
+      "link": "https://herbsutter.com/2025/10/01/my-other-cppcon-talk-video-is-now-available-the-joy-of-c26-contracts-and-some-myth-conceptions/",
+      "pubDate": "Thu, 02 Oct 2025 00:37:15 +0000",
+      "isoDate": "2025-10-02T00:37:15.000Z",
+      "content": "I usually only give one new talk a year, but this year I volunteered to give a second new talk at CppCon on a topic I haven&#8217;t spoken on before: draft C++26 contracts. Thank you to all the experts, including the actual implementers and people who are for and against having contracts in C++26, for &#8230; <a href=\"https://herbsutter.com/2025/10/01/my-other-cppcon-talk-video-is-now-available-the-joy-of-c26-contracts-and-some-myth-conceptions/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">My other CppCon talk video is now available: The Joy of C++26 Contracts (and Some Myth-Conceptions)</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "I usually only give one new talk a year, but this year I volunteered to give a second new talk at CppCon on a topic I haven’t spoken on before: draft C++26 contracts. Thank you to all the experts, including the actual implementers and people who are for and against having contracts in C++26, for … Continue reading My other CppCon talk video is now available: The Joy of C++26 Contracts (and Some Myth-Conceptions) →",
+      "creator": "Herb Sutter",
+      "summary": "作者今年在CppCon上额外发表了一场新演讲，主题为C++26 contracts草案，这是其此前未涉及的话题。演讲视频现已上线。作者感谢了包括实际实现者及支持与反对将contracts纳入C++26的专家们。"
+    },
+    {
+      "title": "Yesterday’s talk video posted: Reflection — C++’s decade-defining rocket engine",
+      "link": "https://herbsutter.com/2025/09/18/yesterdays-talk-video-posted-reflection-cs-decade-defining-rocket-engine/",
+      "pubDate": "Thu, 18 Sep 2025 18:15:14 +0000",
+      "isoDate": "2025-09-18T18:15:14.000Z",
+      "content": "My CppCon keynote video is now online. Thanks to Bash Films for turning around the keynotes in under 24 hours! C++ has just reached a true watershed moment: Barely three months ago, at our Sofia meeting, static reflection became part of draft standard C++. This talk is entirely devoted to showing example after example of &#8230; <a href=\"https://herbsutter.com/2025/09/18/yesterdays-talk-video-posted-reflection-cs-decade-defining-rocket-engine/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Yesterday&#8217;s talk video posted: Reflection — C++&#8217;s decade-defining rocket&#160;engine</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "My CppCon keynote video is now online. Thanks to Bash Films for turning around the keynotes in under 24 hours! C++ has just reached a true watershed moment: Barely three months ago, at our Sofia meeting, static reflection became part of draft standard C++. This talk is entirely devoted to showing example after example of … Continue reading Yesterday’s talk video posted: Reflection — C++’s decade-defining rocket engine →",
+      "creator": "Herb Sutter",
+      "summary": "C++的CppCon主题演讲视频已上线。文章指出，C++刚迎来转折点：三个月前在索菲亚会议上，静态反射正式成为C++草案标准的一部分。该演讲通过大量实例，展示了这一被称为“十年一遇的火箭引擎”的技术如何推动语言发展。"
+    },
+    {
+      "title": "My C++ on Sea talk video posted: “Three Cool Things in C++26”",
+      "link": "https://herbsutter.com/2025/08/19/my-c-on-sea-talk-video-posted-three-cool-things-in-c26/",
+      "pubDate": "Tue, 19 Aug 2025 16:19:51 +0000",
+      "isoDate": "2025-08-19T16:19:51.000Z",
+      "content": "Thanks to C++ on Sea for inviting me to speak in June! The talk video is now live, linked below. It was recorded just 48 hours after the Sofia meeting ended, with key updates hot off the press. Note: Next month at CppCon, I will be going even deeper and broader on reflection. There, I&#8217;ll &#8230; <a href=\"https://herbsutter.com/2025/08/19/my-c-on-sea-talk-video-posted-three-cool-things-in-c26/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">My C++ on Sea talk video posted: &#8220;Three Cool Things in&#160;C++26&#8221;</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "Thanks to C++ on Sea for inviting me to speak in June! The talk video is now live, linked below. It was recorded just 48 hours after the Sofia meeting ended, with key updates hot off the press. Note: Next month at CppCon, I will be going even deeper and broader on reflection. There, I’ll … Continue reading My C++ on Sea talk video posted: “Three Cool Things in C++26” →",
+      "creator": "Herb Sutter",
+      "summary": "我的C++ on Sea演讲视频已发布，主题为“C++26中的三个酷东西”。视频在Sofia会议结束48小时后录制，包含最新更新。作者提到下个月将在CppCon上更深入、更广泛地探讨反射相关内容。"
+    },
+    {
+      "title": "Trip report: June 2025 ISO C++ standards meeting (Sofia, Bulgaria)",
+      "link": "https://herbsutter.com/2025/06/21/trip-report-june-2025-iso-c-standards-meeting-sofia-bulgaria/",
+      "pubDate": "Sat, 21 Jun 2025 09:10:47 +0000",
+      "isoDate": "2025-06-21T09:10:47.000Z",
+      "content": "A unique milestone: &#8220;Whole new language&#8221; Today marks a turning point in C++: A few minutes ago, the C++ committee voted the first seven (7) papers for compile-time reflection into draft C++26 to several sustained rounds of applause in the room. I think Hana &#8220;Ms. Constexpr&#8221; Dusíková summarized the impact of this feature best a &#8230; <a href=\"https://herbsutter.com/2025/06/21/trip-report-june-2025-iso-c-standards-meeting-sofia-bulgaria/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Trip report: June 2025 ISO C++ standards meeting (Sofia,&#160;Bulgaria)</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "A unique milestone: “Whole new language” Today marks a turning point in C++: A few minutes ago, the C++ committee voted the first seven (7) papers for compile-time reflection into draft C++26 to several sustained rounds of applause in the room. I think Hana “Ms. Constexpr” Dusíková summarized the impact of this feature best a … Continue reading Trip report: June 2025 ISO C++ standards meeting (Sofia, Bulgaria) →",
+      "creator": "Herb Sutter",
+      "summary": "C++委员会在2025年6月于索非亚召开的ISO标准会议上，投票通过了首批七项关于编译期反射的提案，将其纳入C++26草案。这一里程碑被形容为“全新语言”，标志着C++在编译期编程能力上的重大提升，会议现场多次赢得掌声。"
+    },
+    {
+      "title": "Living in the future: Using C++26 at work",
+      "link": "https://herbsutter.com/2025/04/23/living-in-the-future-using-c26-at-work/",
+      "pubDate": "Wed, 23 Apr 2025 23:35:25 +0000",
+      "isoDate": "2025-04-23T23:35:25.000Z",
+      "content": "I recently contributed a guest post on my employer&#8217;s blog about the importance of the almost-feature-complete C++26 draft standard: &#8220;Sea change in C++: Why opportunities abound&#8221; It starts by summarizing a talk I gave recently, about how C++26 is poised to do what C++11 did over a decade ago: usher in a new era of &#8230; <a href=\"https://herbsutter.com/2025/04/23/living-in-the-future-using-c26-at-work/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Living in the future: Using C++26 at&#160;work</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "I recently contributed a guest post on my employer’s blog about the importance of the almost-feature-complete C++26 draft standard: “Sea change in C++: Why opportunities abound” It starts by summarizing a talk I gave recently, about how C++26 is poised to do what C++11 did over a decade ago: usher in a new era of … Continue reading Living in the future: Using C++26 at work →",
+      "creator": "Herb Sutter",
+      "summary": "标题：生活在未来：在工作中使用C++26\n\n摘要：一篇关于C++26草案标准的客座文章指出，该标准几乎功能完备，有望像十多年前的C++11那样，开启新时代，带来诸多机遇。"
+    },
+    {
+      "title": "Crate-training Tiamat, un-calling Cthulhu:Taming the UB monsters in C++",
+      "link": "https://herbsutter.com/2025/03/30/crate-training-tiamat-un-calling-cthulhutaming-the-ub-monsters-in-c/",
+      "pubDate": "Mon, 31 Mar 2025 06:39:36 +0000",
+      "isoDate": "2025-03-31T06:39:36.000Z",
+      "content": "For more background on safety and security issues related to C++, including definitions of “language safety” and “software security” and similar terms, see my March 2024 essay “C++ safety, in context.” This essay picks up our story where that one left off to bring us up to date with a specific focus on undefined behavior &#8230; <a href=\"https://herbsutter.com/2025/03/30/crate-training-tiamat-un-calling-cthulhutaming-the-ub-monsters-in-c/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Crate-training Tiamat, un-calling Cthulhu:Taming the UB monsters in&#160;C++</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "For more background on safety and security issues related to C++, including definitions of “language safety” and “software security” and similar terms, see my March 2024 essay “C++ safety, in context.” This essay picks up our story where that one left off to bring us up to date with a specific focus on undefined behavior … Continue reading Crate-training Tiamat, un-calling Cthulhu:Taming the UB monsters in C++ →",
+      "creator": "Herb Sutter",
+      "summary": "文章讨论了C++编程中的未定义行为（UB）问题，借用“驯服巨龙”和“召唤克苏鲁”的比喻，形象说明处理UB的挑战。作者在先前关于C++安全性的文章基础上，进一步聚焦于UB相关议题，旨在探索如何控制这些难以预测的编程“怪兽”，以提升代码的安全性与可靠性。"
+    },
+    {
+      "title": "Trip report: February 2025 ISO C++ standards meeting (Hagenberg, Austria)",
+      "link": "https://herbsutter.com/2025/02/17/trip-report-february-2025-iso-c-standards-meeting-hagenberg-austria/",
+      "pubDate": "Tue, 18 Feb 2025 07:01:15 +0000",
+      "isoDate": "2025-02-18T07:01:15.000Z",
+      "content": "On Saturday, the ISO C++ committee completed the second-last design meeting of C++26, held in Hagenberg, Austria. There is just one meeting left before the C++26 feature set is finalized in June 2025 and draft C++26 is sent out for its international comment ballot (aka “Committee Draft” or “CD”), and C++26 is on track to &#8230; <a href=\"https://herbsutter.com/2025/02/17/trip-report-february-2025-iso-c-standards-meeting-hagenberg-austria/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Trip report: February 2025 ISO C++ standards meeting (Hagenberg,&#160;Austria)</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "On Saturday, the ISO C++ committee completed the second-last design meeting of C++26, held in Hagenberg, Austria. There is just one meeting left before the C++26 feature set is finalized in June 2025 and draft C++26 is sent out for its international comment ballot (aka “Committee Draft” or “CD”), and C++26 is on track to … Continue reading Trip report: February 2025 ISO C++ standards meeting (Hagenberg, Austria) →",
+      "creator": "Herb Sutter",
+      "summary": "ISO C++委员会于2025年2月在奥地利哈根贝格举行了C++26标准的倒数第二次设计会议。会议进展顺利，C++26特性集将在2025年6月定稿，随后草案将进入国际征求意见投票阶段。目前各项工作按计划推进。"
+    },
+    {
+      "title": "code::dive 2024 interview video posted",
+      "link": "https://herbsutter.com/2025/01/16/codedive-2024-interview-video-posted/",
+      "pubDate": "Fri, 17 Jan 2025 05:08:46 +0000",
+      "isoDate": "2025-01-17T05:08:46.000Z",
+      "content": "After my code::dive talk in November, the organizers also recorded an extra 9-minute interview that covered these questions: Here it is&#8230;",
+      "contentSnippet": "After my code::dive talk in November, the organizers also recorded an extra 9-minute interview that covered these questions: Here it is…",
+      "creator": "Herb Sutter",
+      "summary": "code::dive 2024大会演讲结束后，组织者额外录制了一段9分钟的访谈视频，内容围绕相关问题展开。视频现已发布。"
+    },
+    {
+      "title": "New U.S. executive order on cybersecurity",
+      "link": "https://herbsutter.com/2025/01/16/new-u-s-executive-order-on-cybersecurity/",
+      "pubDate": "Fri, 17 Jan 2025 04:51:56 +0000",
+      "isoDate": "2025-01-17T04:51:56.000Z",
+      "content": "The Biden administration just issued another executive order (EO) on hardening U.S. cybersecurity. This is all great stuff. (*) (**) A lot of this EO is repeating the same things I urged in my essay nearly a year ago, &#8220;C++ safety &#8212; in context&#8221;&#8230; here&#8217;s a cut-and-paste of my &#8220;Call(s) to action&#8221; conclusion section I &#8230; <a href=\"https://herbsutter.com/2025/01/16/new-u-s-executive-order-on-cybersecurity/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">New U.S. executive order on&#160;cybersecurity</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "The Biden administration just issued another executive order (EO) on hardening U.S. cybersecurity. This is all great stuff. (*) (**) A lot of this EO is repeating the same things I urged in my essay nearly a year ago, “C++ safety — in context”… here’s a cut-and-paste of my “Call(s) to action” conclusion section I … Continue reading New U.S. executive order on cybersecurity →",
+      "creator": "Herb Sutter",
+      "summary": "美国拜登政府发布了一项关于加强网络安全的行政命令。作者认为该命令内容积极，且其中许多措施与自己在近一年前文章中提出的建议相似，并引用了此前文章中的行动呼吁部分。"
+    },
+    {
+      "title": "Speaking at University of Waterloo on January 15",
+      "link": "https://herbsutter.com/2025/01/07/speaking-at-university-of-waterloo-on-january-15/",
+      "pubDate": "Tue, 07 Jan 2025 18:55:07 +0000",
+      "isoDate": "2025-01-07T18:55:07.000Z",
+      "content": "Next week, on January 15, I&#8217;ll be speaking at the University of Waterloo, my alma mater. There&#8217;ll be a tech talk on key developments in C++ and why I think the language&#8217;s future over the next decade will be exciting, with lots of time allocated to a &#8220;fireside chat / interview&#8221; session for Q&#38;A. The &#8230; <a href=\"https://herbsutter.com/2025/01/07/speaking-at-university-of-waterloo-on-january-15/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Speaking at University of Waterloo on January&#160;15</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "Next week, on January 15, I’ll be speaking at the University of Waterloo, my alma mater. There’ll be a tech talk on key developments in C++ and why I think the language’s future over the next decade will be exciting, with lots of time allocated to a “fireside chat / interview” session for Q&A. The … Continue reading Speaking at University of Waterloo on January 15 →",
+      "creator": "Herb Sutter",
+      "summary": "作者将于1月15日在母校滑铁卢大学发表演讲，举办关于C++关键发展的技术讲座，探讨他对该语言未来十年前景的看好，并安排大量时间进行问答交流。"
+    },
+    {
+      "title": "Speaking at New York C++ meetup on January 13",
+      "link": "https://herbsutter.com/2025/01/02/speaking-at-new-york-c-meetup-on-january-13/",
+      "pubDate": "Thu, 02 Jan 2025 23:17:21 +0000",
+      "isoDate": "2025-01-02T23:17:21.000Z",
+      "content": "Less than two weeks from now, on January 13 I&#8217;ll be speaking at the New York C++ meetup in Midtown East (Clinton Hall at 230 E 51st Street). I&#8217;ll be giving a condensed update of my recent &#8220;Peering forward: C++&#8217;s next decade&#8221; talk, so that there&#8217;ll be plenty of time for Q&#38;A &#8212; please have &#8230; <a href=\"https://herbsutter.com/2025/01/02/speaking-at-new-york-c-meetup-on-january-13/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Speaking at New York C++ meetup on January&#160;13</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "Less than two weeks from now, on January 13 I’ll be speaking at the New York C++ meetup in Midtown East (Clinton Hall at 230 E 51st Street). I’ll be giving a condensed update of my recent “Peering forward: C++’s next decade” talk, so that there’ll be plenty of time for Q&A — please have … Continue reading Speaking at New York C++ meetup on January 13 →",
+      "creator": "Herb Sutter",
+      "summary": "作者将于1月13日在纽约C++ meetup（位于Midtown East的Clinton Hall）发表演讲，内容是其近期“Peering forward: C++’s next decade”报告的浓缩版，并预留充足时间进行问答。"
+    },
+    {
+      "title": "My little New Year’s Week project (and maybe one for you?)",
+      "link": "https://herbsutter.com/2025/01/02/my-little-new-years-week-project-and-maybe-one-for-you/",
+      "pubDate": "Thu, 02 Jan 2025 08:30:40 +0000",
+      "isoDate": "2025-01-02T08:30:40.000Z",
+      "content": "",
+      "contentSnippet": "",
+      "creator": "Herb Sutter",
+      "summary": "文章未提供正文内容，因此无法生成摘要。"
+    },
+    {
+      "title": "My code::dive talk video is available: New Q&A",
+      "link": "https://herbsutter.com/2024/12/11/my-codedive-talk-video-is-available-new-qa/",
+      "pubDate": "Wed, 11 Dec 2024 16:26:25 +0000",
+      "isoDate": "2024-12-11T16:26:25.000Z",
+      "content": "Two weeks ago, Bjarne and I and lots of ISO committee members had a blast at the code::dive C++ conference held on November 25, just two days after the end of the Wrocław ISO C++ meeting. Thanks again to Nokia for hosting the ISO meeting, and for inviting us all to speak at their conference! &#8230; <a href=\"https://herbsutter.com/2024/12/11/my-codedive-talk-video-is-available-new-qa/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">My code::dive talk video is available: New&#160;Q&#38;A</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "Two weeks ago, Bjarne and I and lots of ISO committee members had a blast at the code::dive C++ conference held on November 25, just two days after the end of the Wrocław ISO C++ meeting. Thanks again to Nokia for hosting the ISO meeting, and for inviting us all to speak at their conference! … Continue reading My code::dive talk video is available: New Q&A →",
+      "creator": "Herb Sutter",
+      "summary": "code::dive C++大会演讲视频已发布，主题为“新问答”。两周前，Bjarne与作者及多位ISO委员会成员参加了该会议，会议在ISO Wrocław会议结束两天后举行。作者感谢Nokia主办ISO会议并邀请他们演讲。"
+    },
+    {
+      "title": "Trip report: November 2024 ISO C++ standards meeting (Wrocław, Poland)",
+      "link": "https://herbsutter.com/2024/11/24/wg21-2024-11/",
+      "pubDate": "Mon, 25 Nov 2024 06:00:00 +0000",
+      "isoDate": "2024-11-25T06:00:00.000Z",
+      "content": "On Saturday, the ISO C++ committee completed the third-last design meeting of C++26, held in Wrocław, Poland. There are just two meetings left before the C++26 feature freeze in June 2025, and C++26 is on track to be completed two more meetings after that in early 2026. Implementations are closely tracking draft C++26; GCC and &#8230; <a href=\"https://herbsutter.com/2024/11/24/wg21-2024-11/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">Trip report: November 2024 ISO C++ standards meeting (Wrocław,&#160;Poland)</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "On Saturday, the ISO C++ committee completed the third-last design meeting of C++26, held in Wrocław, Poland. There are just two meetings left before the C++26 feature freeze in June 2025, and C++26 is on track to be completed two more meetings after that in early 2026. Implementations are closely tracking draft C++26; GCC and … Continue reading Trip report: November 2024 ISO C++ standards meeting (Wrocław, Poland) →",
+      "creator": "Herb Sutter",
+      "summary": "2024年11月，ISO C++委员会在波兰弗罗茨瓦夫召开会议，这是C++26设计阶段的倒数第三次会议。距2025年6月特性冻结仅剩两次会议，C++26预计将在2026年初完成。各编译器实现正紧密跟踪C++26草案。"
+    },
+    {
+      "title": "A new chapter, and thoughts on a pivotal year for C++",
+      "link": "https://herbsutter.com/2024/11/11/a-new-chapter-and-a-pivotal-year-for-cpp/",
+      "pubDate": "Mon, 11 Nov 2024 12:15:11 +0000",
+      "isoDate": "2024-11-11T12:15:11.000Z",
+      "content": "Starting today I&#8217;m excited to be working on a new team, with my C++ standards and community roles unchanged. I also wanted to write a few words about why I&#8217;m excited about continuing to invest my time heavily in C++&#8217;s standardization and evolution especially now, because I think 2024 has been a pivotal year for &#8230; <a href=\"https://herbsutter.com/2024/11/11/a-new-chapter-and-a-pivotal-year-for-cpp/\" class=\"more-link\">Continue reading <span class=\"screen-reader-text\">A new chapter, and thoughts on a pivotal year for&#160;C++</span> <span class=\"meta-nav\">&#8594;</span></a>",
+      "contentSnippet": "Starting today I’m excited to be working on a new team, with my C++ standards and community roles unchanged. I also wanted to write a few words about why I’m excited about continuing to invest my time heavily in C++’s standardization and evolution especially now, because I think 2024 has been a pivotal year for … Continue reading A new chapter, and thoughts on a pivotal year for C++ →",
+      "creator": "Herb Sutter",
+      "summary": "作者宣布加入新团队，但将继续担任C++标准与社区相关职务。他认为2024年是C++发展的关键一年，因此继续投入大量时间于C++标准化与演进工作。"
+    },
+    {
+      "title": "Podcast interview: Rust and C++",
+      "link": "https://herbsutter.com/2024/10/23/podcast-interview-rust-and-c/",
+      "pubDate": "Wed, 23 Oct 2024 23:48:47 +0000",
+      "isoDate": "2024-10-23T23:48:47.000Z",
+      "content": "In early September I had a very enjoyable technical chat with Steve Klabnik of Rust fame and interviewer Kevin Ball of Software Engineering Daily, and the podcast is now available. Update: I asked them to please change the &#8220;Rust vs C++&#8221; title to &#8220;Rust and C++&#8221; and they kindly did so. Thanks! Here&#8217;s the info&#8230;",
+      "contentSnippet": "In early September I had a very enjoyable technical chat with Steve Klabnik of Rust fame and interviewer Kevin Ball of Software Engineering Daily, and the podcast is now available. Update: I asked them to please change the “Rust vs C++” title to “Rust and C++” and they kindly did so. Thanks! Here’s the info…",
+      "creator": "Herb Sutter",
+      "summary": "作者与Rust专家Steve Klabnik及Software Engineering Daily主持人Kevin Ball进行了一次技术播客访谈。访谈标题原为“Rust vs C++”，经作者请求后改为“Rust and C++”，强调二者并非对立关系。该播客现已上线。"
+    }
+  ],
+  "lastUpdated": "2026-09-04T22:04:50.669Z"
+}
