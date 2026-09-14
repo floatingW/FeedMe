@@ -11,8 +11,8 @@
 [![Vite](https://img.shields.io/badge/Bundler-Vite-646CFF?style=flat-square&labelColor=black&logo=vite&logoColor=white)](https://vitejs.dev/)
 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Seanium/feedme/update-deploy.yml?branch=main&style=flat-square&labelColor=black&logo=github&logoColor=white)](https://github.com/Seanium/feedme/actions)
-[![RSS Update](https://img.shields.io/badge/RSS%20Update-Every%203h-orange?style=flat-square&labelColor=black&logo=rss&logoColor=white)](https://github.com/Seanium/feedme/blob/main/.github/workflows/update-deploy.yml)
-[![Live Demo](https://img.shields.io/badge/Demo-Online-2ea44f?style=flat-square&logo=safari&logoColor=white)](https://feedme.icu)
+[![RSS Update](https://img.shields.io/badge/RSS%20Update-Every%201h-orange?style=flat-square&labelColor=black&logo=rss&logoColor=white)](https://github.com/Seanium/feedme/blob/main/.github/workflows/update-deploy.yml)
+[![Live Demo](https://img.shields.io/badge/Demo-Online-2ea44f?style=flat-square&logo=safari&logoColor=white)](https://seanium.github.io/FeedMe/)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Seanium/FeedMe)
 
 </div>
@@ -71,6 +71,7 @@ This project uses GitHub Actions for automatic deployment to GitHub Pages, with 
    - `LLM_API_KEY`: API key for AI summary generation
    - `LLM_API_BASE`: API base URL for the LLM service
    - `LLM_NAME`: Name of the model to use
+   - `SUMMARY_LOCALES`: Comma-separated summary locales, defaults to `zh,en`
 
 3. **Enable GitHub Pages**
 
@@ -84,7 +85,7 @@ This project uses GitHub Actions for automatic deployment to GitHub Pages, with 
 
 **Update Data and Deploy** (`update-deploy.yml`):
 - Trigger conditions:
-  - Scheduled execution (every 3 hours)
+  - Scheduled execution (every hour)
   - Push code
   - Manual trigger
 - Execution content:
@@ -96,10 +97,11 @@ This project uses GitHub Actions for automatic deployment to GitHub Pages, with 
 #### Custom Deployment Configuration
 
 - **Customize RSS Sources**:
-  Edit the `src/config/rss-config.js` file to modify or add RSS sources. Each source should include:
-  - Name
-  - URL
-  - Category
+  Edit the `src/config/feedme.config.yaml` file to modify or add RSS sources. Category display order follows the `categories` list. Each source should include:
+  - `id`: stable unique identifier
+  - `name`: localized names
+  - `url`: RSS URL
+  - `category`: source category
 
 - **Modify Update Frequency**: Edit the cron expression in `.github/workflows/update-deploy.yml`
   ```yml
@@ -107,10 +109,10 @@ This project uses GitHub Actions for automatic deployment to GitHub Pages, with 
   cron: '0 0 * * *'
   ```
 
-- **Adjust Retained Items**: Modify the `maxItemsPerFeed` value in `src/config/rss-config.js`
+- **Adjust Default Source and Retained Items**: Modify `settings.defaultSource` and `settings.maxItemsPerFeed` in `src/config/feedme.config.yaml`
 
 - **Customize Summary Generation**:
-  If you need to customize the summary generation method, such as following a specific format or switching the summary language, modify the `prompt` variable in `scripts/update-feeds.js`
+  Adjust the summary prompt, input truncation length, `temperature`, `maxTokens`, and fallback messages in the `summary` section of `src/config/feedme.config.yaml`. Summary output languages are still controlled by `SUMMARY_LOCALES`, for example `zh`, `en`, or `zh,en`. To add another language, add locale metadata in `src/config/i18n-config.ts` and provide matching localized labels/messages.
 
 ### Method 2: Vercel Deployment
 
@@ -164,10 +166,12 @@ This method uses Docker to run FeedMe locally or on a server. It utilizes an in-
     The application will be available at [http://localhost:3000](http://localhost:3000).
 
 5.  **Automatic Updates**
-    The container will automatically run `pnpm update-feeds` and `pnpm build`, then restart the server based on the schedule in `src/config/crontab-docker` (defaults to every 3 hours).
+    The container will automatically run `pnpm update-feeds` and `pnpm build`, then restart the server based on the schedule in `src/config/crontab-docker` (defaults to every hour).
     To modify the update frequency, edit the cron expression in the `src/config/crontab-docker` file (e.g., `0 */6 * * *` for updates every 6 hours).
 
 ## 💻 Development
+
+This project uses Node.js 24 LTS. Use `.nvmrc` or `.node-version` to switch automatically.
 
 1. **Clone the Repository**
    ```bash
@@ -192,6 +196,7 @@ This method uses Docker to run FeedMe locally or on a server. It utilizes an in-
    LLM_API_KEY=your_api_key
    LLM_API_BASE=LLM service API base URL (e.g., https://api.siliconflow.cn/v1)
    LLM_NAME=model name (e.g., THUDM/GLM-4-9B-0414)
+   SUMMARY_LOCALES=summary locales (e.g., zh,en)
    ```
    These environment variables are used to configure the article summary generation feature and need to be obtained from an LLM service provider
 
@@ -201,7 +206,13 @@ This method uses Docker to run FeedMe locally or on a server. It utilizes an in-
    ```
    This command fetches RSS sources and generates summaries, saving them to the `public/data` directory
 
-5. **Start the Development Server**
+5. **Type Check and Build**
+   ```bash
+   pnpm typecheck
+   pnpm build
+   ```
+
+6. **Start the Development Server**
    ```bash
    pnpm dev
    ```
@@ -209,10 +220,10 @@ This method uses Docker to run FeedMe locally or on a server. It utilizes an in-
 
 ## Star History
 
-<a href="https://www.star-history.com/#Seanium/FeedMe&Date">
+<a href="https://www.star-history.com/?repos=seanium%2Ffeedme&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Seanium/FeedMe&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Seanium/FeedMe&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Seanium/FeedMe&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=seanium/feedme&type=date&theme=dark&legend=top-left&sealed_token=pn57mzD7vzu2U9qVE7P0wxol1I1_eVEZ4e5NTQBqojwQd29iAIn4a1Th3yIKtNVQqMUaU0iViwYZ93mslJ45MENwva47txmgAOfOz2J6BBgkeBpIk0llkg" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=seanium/feedme&type=date&legend=top-left&sealed_token=pn57mzD7vzu2U9qVE7P0wxol1I1_eVEZ4e5NTQBqojwQd29iAIn4a1Th3yIKtNVQqMUaU0iViwYZ93mslJ45MENwva47txmgAOfOz2J6BBgkeBpIk0llkg" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=seanium/feedme&type=date&legend=top-left&sealed_token=pn57mzD7vzu2U9qVE7P0wxol1I1_eVEZ4e5NTQBqojwQd29iAIn4a1Th3yIKtNVQqMUaU0iViwYZ93mslJ45MENwva47txmgAOfOz2J6BBgkeBpIk0llkg" />
  </picture>
 </a>

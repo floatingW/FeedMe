@@ -47,33 +47,33 @@ body {
   }
 
   .dark {
-    --background: 220 18% 12%;
-    --foreground: 210 40% 92%;
+    --background: 225 16% 9%;
+    --foreground: 215 28% 90%;
 
-    --card: 220 16% 16%;
-    --card-foreground: 210 40% 92%;
+    --card: 224 14% 14%;
+    --card-foreground: 215 28% 91%;
 
-    --popover: 220 16% 18%;
-    --popover-foreground: 210 40% 92%;
+    --popover: 224 14% 15.5%;
+    --popover-foreground: 215 28% 91%;
 
-    --primary: 213 72% 65%;
-    --primary-foreground: 214 100% 97%;
+    --primary: 210 78% 68%;
+    --primary-foreground: 222 47% 10%;
 
-    --secondary: 220 14% 22%;
-    --secondary-foreground: 210 30% 92%;
+    --secondary: 220 12% 18%;
+    --secondary-foreground: 215 24% 88%;
 
-    --muted: 220 15% 20%;
-    --muted-foreground: 215 20% 72%;
+    --muted: 220 12% 18%;
+    --muted-foreground: 216 14% 68%;
 
-    --accent: 205 48% 45%;
-    --accent-foreground: 210 100% 96%;
+    --accent: 214 42% 24%;
+    --accent-foreground: 213 54% 91%;
 
-    --destructive: 0 62% 55%;
+    --destructive: 0 68% 62%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 16% 24%;
-    --input: 220 16% 24%;
-    --ring: 213 72% 65%;
+    --border: 222 13% 22%;
+    --input: 222 13% 24%;
+    --ring: 210 78% 68%;
   }
 }
 
@@ -87,11 +87,183 @@ body {
 }
 
 @layer components {
+  .feed-view-transition {
+    animation: feed-view-enter 220ms ease-out both;
+  }
+
   .feed-card {
-    @apply border border-border bg-card shadow-sm hover:shadow-md transition-all duration-300 relative;
+    @apply border border-border bg-card shadow-sm transition-all duration-300 relative;
+    --feed-card-hover-border: hsl(var(--primary) / 0.1);
+    --feed-card-hover-line: hsl(var(--primary) / 0.18);
+    --feed-card-hover-shadow:
+      0 6px 16px hsl(221 35% 32% / 0.06),
+      0 1px 4px hsl(221 35% 32% / 0.04);
+    --feed-card-selected-border: hsl(var(--primary) / 0.16);
+    --feed-card-selected-line: hsl(var(--primary) / 0.34);
+    --feed-card-selected-shadow:
+      0 8px 20px hsl(221 35% 32% / 0.08),
+      0 2px 6px hsl(221 35% 32% / 0.05);
+    transition:
+      background-color 300ms ease,
+      border-color 300ms ease,
+      box-shadow 300ms ease,
+      transform 300ms ease;
+  }
+
+  .feed-card:hover {
+    border-color: var(--feed-card-hover-border);
+    box-shadow: var(--feed-card-hover-shadow);
+    transform: translateY(-1px);
+  }
+
+  .feed-card::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    bottom: 1px;
+    width: 2px;
+    border-radius: var(--radius) 0 0 var(--radius);
+    clip-path: inset(0 0 0 0 round var(--radius) 0 0 var(--radius));
+    background: linear-gradient(
+      to bottom,
+      transparent 0,
+      var(--feed-card-selected-line) calc(var(--radius) + 1px),
+      var(--feed-card-selected-line) calc(100% - var(--radius) - 1px),
+      transparent 100%
+    );
+    opacity: 0;
+    transform: scaleY(0.72);
+    transform-origin: center;
+    transition:
+      opacity 220ms ease,
+      transform 300ms ease;
+  }
+
+  .feed-card-selected::before {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  .feed-card:not(.feed-card-selected):hover::before {
+    --feed-card-selected-line: var(--feed-card-hover-line);
+    opacity: 0.72;
+    transform: scaleY(1);
+  }
+
+  .feed-card-selected:hover::before {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  .source-scroll {
+    scrollbar-gutter: stable;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.34) transparent;
+    scrollbar-width: thin;
+  }
+
+  .source-scroll::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  .source-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .source-scroll::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.34);
+    border-radius: 999px;
+  }
+
+  .source-scroll::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.52);
+  }
+
+  .source-category-scroll {
+    scrollbar-width: none;
+  }
+
+  .source-category-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .source-category-scrollbar {
+    @apply relative mt-2 h-2 w-full cursor-default rounded-full outline-none;
+    background: hsl(var(--muted) / 0.7);
+    opacity: 0;
+    transition: opacity 160ms ease;
+  }
+
+  .source-category-scrollbar[data-visible="true"],
+  .source-category-region:hover .source-category-scrollbar,
+  .source-category-region:focus-within .source-category-scrollbar,
+  .source-category-scrollbar[data-dragging="true"] {
+    opacity: 1;
+  }
+
+  .source-category-scrollbar:focus-visible {
+    box-shadow:
+      0 0 0 2px hsl(var(--popover)),
+      0 0 0 4px hsl(var(--ring) / 0.72);
+  }
+
+  .source-category-scrollbar-thumb {
+    @apply absolute top-1/2 h-1.5 -translate-y-1/2 rounded-full transition-colors;
+    background: hsl(var(--muted-foreground) / 0.46);
+  }
+
+  .source-category-scrollbar:hover .source-category-scrollbar-thumb,
+  .source-category-scrollbar:focus-visible .source-category-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.64);
+  }
+
+  .search-highlight {
+    @apply rounded-sm px-0.5 py-0 text-foreground;
+    background: hsl(var(--primary) / 0.16);
+    box-shadow: 0 0 0 1px hsl(var(--primary) / 0.2);
+  }
+
+  .dark .search-highlight {
+    color: hsl(var(--primary-foreground));
+    background: hsl(var(--primary) / 0.72);
+    box-shadow: 0 0 0 1px hsl(var(--primary) / 0.34);
   }
 
   .dark .feed-card {
-    @apply bg-card border-border shadow-md hover:shadow-lg;
+    @apply bg-card border-border;
+    --feed-card-hover-border: hsl(var(--primary) / 0.14);
+    --feed-card-hover-line: hsl(var(--primary) / 0.16);
+    --feed-card-hover-shadow:
+      0 1px 0 hsl(0 0% 100% / 0.035),
+      0 12px 30px hsl(225 40% 3% / 0.34),
+      0 0 0 1px hsl(var(--primary) / 0.035);
+    --feed-card-selected-border: hsl(var(--primary) / 0.18);
+    --feed-card-selected-line: hsl(var(--primary) / 0.32);
+    --feed-card-selected-shadow:
+      0 1px 0 hsl(0 0% 100% / 0.045),
+      0 14px 34px hsl(225 40% 3% / 0.42),
+      0 0 0 1px hsl(var(--primary) / 0.05);
+    box-shadow:
+      0 1px 0 hsl(0 0% 100% / 0.03),
+      0 10px 28px hsl(225 35% 4% / 0.28);
+  }
+}
+
+@keyframes feed-view-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feed-view-transition {
+    animation: none;
   }
 }

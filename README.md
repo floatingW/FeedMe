@@ -11,8 +11,8 @@
 [![Vite](https://img.shields.io/badge/Bundler-Vite-646CFF?style=flat-square&labelColor=black&logo=vite&logoColor=white)](https://vitejs.dev/)
 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Seanium/feedme/update-deploy.yml?branch=main&style=flat-square&labelColor=black&logo=github&logoColor=white)](https://github.com/Seanium/feedme/actions)
-[![RSS Update](https://img.shields.io/badge/RSS%20Update-Every%203h-orange?style=flat-square&labelColor=black&logo=rss&logoColor=white)](https://github.com/Seanium/feedme/blob/main/.github/workflows/update-deploy.yml)
-[![Live Demo](https://img.shields.io/badge/Demo-Online-2ea44f?style=flat-square&logo=safari&logoColor=white)](https://feedme.icu)
+[![RSS Update](https://img.shields.io/badge/RSS%20Update-Every%201h-orange?style=flat-square&labelColor=black&logo=rss&logoColor=white)](https://github.com/Seanium/feedme/blob/main/.github/workflows/update-deploy.yml)
+[![Live Demo](https://img.shields.io/badge/Demo-Online-2ea44f?style=flat-square&logo=safari&logoColor=white)](https://seanium.github.io/FeedMe/)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Seanium/FeedMe)
 
 </div>
@@ -71,6 +71,7 @@
    - `LLM_API_KEY`: 用于 AI 摘要生成的 API 密钥
    - `LLM_API_BASE`: LLM 服务的 API 基础 URL
    - `LLM_NAME`: 使用的模型名称
+   - `SUMMARY_LOCALES`: 需要生成摘要的语言列表，默认 `zh,en`
 
 3. **启用 GitHub Pages**
    
@@ -84,7 +85,7 @@
 
 **更新数据并部署** (`update-deploy.yml`)：
 - 触发条件：
-  - 定时执行（每 3 小时一次）
+  - 定时执行（每小时一次）
   - 推送代码
   - 手动触发
 - 执行内容：
@@ -96,10 +97,11 @@
 #### 自定义部署配置
 
 - **自定义 RSS 源**：
-  编辑 `src/config/rss-config.js` 文件以修改或添加 RSS 源。每个源需要包含：
-  - 名称
-  - URL
-  - 分类
+  编辑 `src/config/feedme.config.yaml` 文件以修改或添加 RSS 源。类目的展示顺序由 `categories` 列表顺序决定。每个源需要包含：
+  - `id`：稳定唯一标识
+  - `name`：多语言名称
+  - `url`：RSS 地址
+  - `category`：所属分类
 
 - **修改更新频率**: 编辑 `.github/workflows/update-deploy.yml` 中的 cron 表达式
   ```yml
@@ -107,10 +109,10 @@
   cron: '0 0 * * *'
   ```
 
-- **调整保留条目数**: 修改 `src/config/rss-config.js` 中的 `maxItemsPerFeed` 值
+- **调整默认源和保留条目数**: 修改 `src/config/feedme.config.yaml` 中的 `settings.defaultSource` 和 `settings.maxItemsPerFeed`
 
 - **自定义摘要生成**：
-  如果需要自定义摘要生成方法，比如遵循特定格式或切换摘要语言，请修改 `scripts/update-feeds.js` 中的 `prompt` 变量
+  在 `src/config/feedme.config.yaml` 的 `summary` 中可以调整摘要提示词、输入截断长度、`temperature`、`maxTokens` 和摘要失败兜底文案。摘要生成语言仍通过 `SUMMARY_LOCALES` 控制，例如 `zh`、`en` 或 `zh,en`。如需新增语言，请在 `src/config/i18n-config.ts` 中增加 locale 元数据，并在相关本地化配置中补充该语言文案。
 
 ### 方式二：Vercel 部署
 
@@ -164,10 +166,12 @@ GitHub Actions 每次构建后会自动推送到 `deploy` 分支，阿里云 ESA
     应用将在 [http://localhost:3000](http://localhost:3000) 上可用。
 
 5.  **自动更新**
-    容器将根据 `src/config/crontab-docker` 中的配置（默认为每 3 小时）自动执行 `pnpm update-feeds` 和 `pnpm build`，并重新启动服务。
+    容器将根据 `src/config/crontab-docker` 中的配置（默认为每小时）自动执行 `pnpm update-feeds` 和 `pnpm build`，并重新启动服务。
     如需修改更新频率，请编辑 `src/config/crontab-docker` 文件中的 cron 表达式（例如 `0 */6 * * *` 表示每 6 小时执行一次）。
 
 ## 💻 开发
+
+本项目使用 Node.js 24 LTS。可通过 `.nvmrc` 或 `.node-version` 自动切换版本。
 
 1. **克隆仓库**
    ```bash
@@ -192,6 +196,7 @@ GitHub Actions 每次构建后会自动推送到 `deploy` 分支，阿里云 ESA
    LLM_API_KEY=你的 API 密钥
    LLM_API_BASE=LLM服务的 API 基础 URL（例如：https://api.siliconflow.cn/v1）
    LLM_NAME=使用的模型名称（例如：THUDM/GLM-4-9B-0414）
+   SUMMARY_LOCALES=摘要语言列表（例如：zh,en）
    ```
    这些环境变量用于配置文章摘要生成功能，需要从 LLM 服务提供商获取
 
@@ -201,7 +206,13 @@ GitHub Actions 每次构建后会自动推送到 `deploy` 分支，阿里云 ESA
    ```
    此命令会抓取 RSS 源并生成摘要，保存到 `public/data` 目录
 
-5. **启动开发服务器**
+5. **类型检查与构建**
+   ```bash
+   pnpm typecheck
+   pnpm build
+   ```
+
+6. **启动开发服务器**
    ```bash
    pnpm dev
    ```
@@ -209,10 +220,10 @@ GitHub Actions 每次构建后会自动推送到 `deploy` 分支，阿里云 ESA
 
 ## Star 趋势
 
-<a href="https://www.star-history.com/#Seanium/FeedMe&Date">
+<a href="https://www.star-history.com/?repos=seanium%2Ffeedme&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Seanium/FeedMe&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Seanium/FeedMe&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Seanium/FeedMe&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=seanium/feedme&type=date&theme=dark&legend=top-left&sealed_token=pn57mzD7vzu2U9qVE7P0wxol1I1_eVEZ4e5NTQBqojwQd29iAIn4a1Th3yIKtNVQqMUaU0iViwYZ93mslJ45MENwva47txmgAOfOz2J6BBgkeBpIk0llkg" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=seanium/feedme&type=date&legend=top-left&sealed_token=pn57mzD7vzu2U9qVE7P0wxol1I1_eVEZ4e5NTQBqojwQd29iAIn4a1Th3yIKtNVQqMUaU0iViwYZ93mslJ45MENwva47txmgAOfOz2J6BBgkeBpIk0llkg" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=seanium/feedme&type=date&legend=top-left&sealed_token=pn57mzD7vzu2U9qVE7P0wxol1I1_eVEZ4e5NTQBqojwQd29iAIn4a1Th3yIKtNVQqMUaU0iViwYZ93mslJ45MENwva47txmgAOfOz2J6BBgkeBpIk0llkg" />
  </picture>
 </a>

@@ -6,18 +6,12 @@ export interface FeedItem {
   content?: string
   contentSnippet?: string
   creator?: string
+  summaries?: Record<string, string>
   summary?: string
   enclosure?: {
     url: string
     type: string
   }
-}
-
-export interface Feed {
-  title: string
-  description: string
-  link: string
-  items: FeedItem[]
 }
 
 export interface FeedData {
